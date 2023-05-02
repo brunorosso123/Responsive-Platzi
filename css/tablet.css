@@ -1,0 +1,7 @@
+.footer-grid .lado-derecho a{
+    font-size:4rem;
+}
+.section-card .main-card-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}

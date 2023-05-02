@@ -1,0 +1,634 @@
+:root{
+    /* colores  */
+    --Bitcoin-orange:#F7931A;
+    --Soft-orange:#FFE9D5;
+    --Secondary-blue:#1A9AF7;
+    --Soft-blue:#E7F5FF;
+    --Warm-black:#201E1C;
+    --Warm-black1:#282623;
+    --Grey:#BABABA; 
+    --Off-white:#FAF8F7;
+    --Just-white:#FFFFFF;
+    --darketo: #000000;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+/* ----------------------------- HEADER -------------------------------------- */
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 280px;
+    height: 334px;
+    text-align: center;
+    align-self: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 50px;
+    align-self: center;
+}
+.header--titile-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 30px;
+    text-align: center;
+    align-self: center;
+}
+.header--titile-container h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color:var(--Off-white);
+}
+.header--titile-container p{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color:var(--Soft-orange);
+}
+.header--titile-container .header--button{
+    position: absolute;
+    left: calc(50% - 115px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--Off-white);
+    /* sombras */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span {
+    display: inline-block;
+    cursor:pointer;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/down-arrow.svg");
+}
+/* ------------------------ MAIN --------------------------------------- */
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--Off-white);
+    min-width: 280px;
+}
+/* ------------------------ Primera seccion tabla ----------------------------- */
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-exchange-container .backgraound-exchange{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: url('./assets/img/Bitcoin.svg') center/cover no-repeat;
+    margin-bottom: 50px;
+}
+.main-exchange-container--tittle{
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container--tittle h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--Warm-black);
+}
+.main-exchange-container--tittle p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.main-table-container{
+    width: 70%;
+    min-width: 235px;
+    max-width: 900px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter" , sans-serif;
+}
+.main-table-container .table-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color:var(--Bitcoin-orange);
+}
+.main-table-container .table-footer{
+    width: 173px;
+    height: 31px;
+    background-color: var(--Soft-orange);
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--Warm-black1);
+    margin-top: 15px;
+}
+.contenedor-detabla{
+    position: relative;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.contenedor-detabla table{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-detabla tr{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--Grey);
+    background-color: var(--Just-white);
+}
+.contenedor-detabla .borde-top-izquierdo {
+    border-radius: 15px 0 0 0;
+}
+.contenedor-detabla .borde-top-derecho {
+    border-radius: 0 15px 0 0;
+}
+.contenedor-detabla .borde-end-derecho {
+    border-radius: 0 0 15px 0;
+}
+.contenedor-detabla .borde-end-izquiredo{
+    border-radius: 0 0 0 15px ;
+}
+.table_derecha{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: normal;
+    color: #757575;
+}
+.contenedor-detabla .down{
+    /* sin el display no aparecian */
+    display: inline-block; 
+    width: 11px;
+    height: 6px;
+    margin-left: 15px;
+    background: url("./assets/icons/trending-down.svg")center/cover no-repeat;
+}
+.contenedor-detabla .up{
+    /* sin el display no aparecian */
+    display: inline-block; 
+    width: 11px;
+    height: 6px;
+    margin-left: 15px;
+    background: url("./assets/icons/trending-up.svg")center/cover no-repeat;
+}
+.contenedor-detabla .siguiente{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url("./assets/icons/right-arrow.svg")center/cover no-repeat;
+    top: calc(50% - 6px);
+    right: -24px;
+}
+/* ------------------------ Segunda seccion grid ----------------------------- */
+.comission-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+.comission-table .table-grid{
+    position: relative;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2.6px;
+    grid-column-gap: 2px;
+}
+.table-grid .down{
+    /* sin el display no aparecian */
+    display: inline-block; 
+    width: 11px;
+    height: 6px;
+    margin-left: 15px;
+    background: url("./assets/icons/trending-down.svg")center/cover no-repeat;
+}
+.table-grid .up{
+        /* sin el display no aparecian */
+        display: inline-block; 
+        width: 11px;
+        height: 6px;
+        margin-left: 15px;
+        background: url("./assets/icons/trending-up.svg")center/cover no-repeat;
+}
+.comission-table .grid-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color:var(--Secondary-blue);
+    margin-left: 40px;
+    /* text-align: ; */
+}
+.comission-table .grid-footer{
+    width: 173px;
+    height: 31px;
+    background-color: var(--Soft-blue);
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--Warm-black1);
+    margin-top: 15px;
+}
+.grid-fondo{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Just-white);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.table-grid .grid-izquierdo{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--Grey);
+}
+.table-grid .grid-derecho{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: normal;
+    color: #757575;
+}
+.comission-table .borde-top-izquierdo {
+    border-radius: 15px 0 0 0;
+}
+.comission-table .borde-top-derecho {
+    border-radius: 0 15px 0 0;
+}
+.comission-table .borde-end-derecho {
+    border-radius: 0 0 15px 0;
+}
+.comission-table .borde-end-izquiredo{
+    border-radius: 0 0 0 15px ;
+}
+.table-grid .siguiente{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url("./assets/icons/right-arrow.svg")center/cover no-repeat;
+    top: calc(45% - 6px);
+    right: -24px;
+}
+/* ------------------------ Slider primera y segunda tabla----------------------------- */
+.main-table-backgraound{
+    display: flex;
+    height: 360px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:  x proximity;
+}
+/* ------------------------ Cards ----------------------------- */
+.section-card{
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    height: auto;
+    padding: 20px 10px;
+    padding-bottom: 50px;
+    background-color: var(--Warm-black);
+}
+.section-card .papita{
+    position: absolute;
+    width: 42px;
+    height: 24px;
+    background: url('./assets/icons/batata.svg')no-repeat;
+    top: calc(0% - 12.5px);
+	left: calc(50% - 20px);
+}
+.section-card .main-typ h3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    padding-top: 40px;
+    color: var(--Just-white);
+}
+.section-card .main-typ p{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.8rem;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 30px;
+color: #808080;
+}
+.section-card .main-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 10px;
+}
+.section-card .main-details-container--card{
+    position: relative;
+    background-color: var(--Warm-black1);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0,16);
+    padding: 20px 20px;
+}
+.main-details-container--card .card--tittle{
+    font-family: "DM Sans" sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: var(--Just-white);
+}
+.main-details-container--card .card--parrafo{
+    font-family: "DM Sans" sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.main-details-container--card .clock{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/icons/clock.svg')  no-repeat;
+    top: 16px;
+    left: 18px;
+}
+.main-details-container--card .view{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/icons/eye.svg')  no-repeat;
+    top: 16px;
+    left: 18px;
+}
+.main-details-container--card .pesos{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/icons/dollar-sign.svg')  no-repeat;
+    top: 16px;
+    left: 18px;
+}
+.main-details-container--card .check{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/icons/check-circle.svg')  no-repeat;
+    top: 16px;
+    left: 18px;
+}
+/* ------------------------ Imagen de fondo ----------------------------- */
+.main-img{
+    width: 100%;
+    height: auto;
+}
+.main-img .imgg{
+    width: 100%;
+    min-width: 300px;
+    height: 60vh;
+    background: url("./assets/img/bitcoinbaby.jpg")center/cover no-repeat;
+}
+.main-img p{
+    font-family: "DM Sans" sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    padding-top: 60px;
+    color: var(--Just-white);
+}
+/* ------------------------ Card 3 ----------------------------- */
+.ultima-section--tirdCard{
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    position: relative;
+    background-color: var(--Off-white);
+}
+.ultima-section--tirdCard .tirdCard--typ h4{
+    padding: 10px;
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-top: 40px;
+    color: var(--Warm-black);
+}
+.ultima-section--tirdCard .tirdCard--typ p{
+    padding: 10px;
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding-top: 20px;
+    color: #757575;
+    
+}
+.tird-tarjeta{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 270px;
+    min-height: 270px;
+    margin: 50px 10px 0;
+    padding: 20px;
+    background-color:var(--Just-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+.container-slaider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:  x proximity;
+}
+.tird-tarjeta .pago{
+    text-align: center;
+    font-family: 'DM Sans'sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+}
+.tird-tarjeta .simbolo{
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: top;
+    color: #636363;
+}
+.tird-tarjeta .precio{
+    position: relative;
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--darketo);
+}
+.tird-tarjeta .ahorro{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #757575;
+}
+.tird-tarjeta .boton{
+    display: flex;
+    margin: 0 auto;
+    width: 151px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F7931A;
+    border-radius: 4px;
+    background-color: var(--Off-white);
+    cursor: pointer;
+}
+.tird-tarjeta .boton p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.tird-tarjeta .boton span{
+    display: inline-block;
+    width: 21px;
+    height: 26px;
+    background: url("./assets/icons/orange-right-arrow.svg") center/cover no-repeat;
+    margin-left: 5px;
+}
+.recomendado-tirdcard{
+    position: absolute;
+    z-index: 40;
+    width: 101px;
+    height: 31px;
+    max-width: 101px;
+    top: -15px;
+    left: calc(50% - 51px);
+    padding: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--Bitcoin-orange);
+    color: var(--Just-white);
+}
+/* ------------------------ Footer ----------------------------- */
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-width: 250px;
+    height: 150px;
+    background-color: var(--Bitcoin-orange);
+}
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-grid .lado-derecho ul{
+    list-style: none;
+}
+.footer-grid .lado-derecho a{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    margin-left: 40px;
+    color: var(--Just-white);
+}
+.footer-grid .lado-izquierdo p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    color: var(--Soft-orange);
+}
+.footer-grid .lado-izquierdo span {
+    width: 38px;
+    height: 25px;
+    background: url("./assets/icons/batata.svg") center/cover no-repeat;
+}
+
+/* tengo que arreglar las tablas correr titulos y tabla hacia la izquierda */
+/* problemas en comissiones y en la flecha de comisiones derecha */
